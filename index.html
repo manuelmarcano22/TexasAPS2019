@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Compact Object in NGC6397. Texas APS October 2019</title>
+
+		<meta name="description" content="MUSE observation NGC 6397 compact objects" />
+		<meta name="author" content="Manuel Pichardo Marcano" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/reveal.min.css" />
+		<link rel="stylesheet" href="css/theme/defense.css" id="theme" />
+        <link rel="stylesheet" href="css/phd.css" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css" />
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+        <script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="topleft" id="chapter-name">	</div> 
+			<div class="bottomright" id="slide-progress">	</div> 
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section  data-state="sky">
+						<h1>Compact Binaries in 
+                        the globular cluster NGC 6397</h1>
+						<div class="altpanel" style="height: 430px">
+								<h3 class="name">Manuel Pichardo Marcano</h3>
+								<p>
+									<small>Supervised by</small>
+									<h3 class="name">Thomas J. Maccarone</h3>
+									
+	<small>Collaborators:</small>
+									
+									
+									
+<h4 class="name"><span>L. E. Rivera Sandoval, N. Webb, S. Guillot</span></h4>
+								</p>
+								<div>
+									<img width="50" src="images/logos/ttu.svg" alt="G-SCOP" class="logo" />
+								</div>
+								<div style="margin-top: .5em; font-size: .75em; line-height: 1">
+									October, 2019
+								</div>
+						<aside class="notes">
+							<div data-markdown>
+							* fa
+                            </div> 
+						</aside>
+</section>
+
+
+
+
+
+				<section data-state='sky' data-chapter='Introduction'>
+
+                    <section>
+                            <h2>Compact Binaries</h2>
+<div class="altpanel" style="height: 430px">
+                                    <h3> Cataclysmic Variable/ Low-mass X-ray Binary</h3>
+						<div class style="float: left; width: 45%" data-fragment-index='10'>
+							<ul>
+                                    <li><b>White dwarf / Neutron star</b> as primary:</li>
+                                            
+                                    <li> MS star companion</li>
+								<li>Accretion (usually) via a disk:</li>
+                                <ul>
+                                        <li>Disk instability <em>outbursts</em>. Increase several magnitudes</li>
+                                        <li style='list-style: none;'></li>
+
+                                </ul>
+                                
+							</ul>
+						</div>
+						<figure style="float: right; width: 45%">
+							<img src="images/wdns.png" />
+							<figcaption>
+                            <small>Credit: Rob Hynes.</small>
+							</figcaption>
+						</figure>
+                           
+						<figure style="float: right; width: 45%">
+							<img src="images/halpha.svg" />
+						</figure>
+						</div>
+                    </section>
+
+
+                    <section>
+						<h2>Binaries in Globular Clusters </h2>
+					<ul>
+							<li class='fragment' data-fragment-index='1' ><b>Globular Clusters</b>
+							<ul>
+                                    <li>The binary population drives the <em>dynamical evolution</em> of GCs</li>
+							</ul>
+							</li>
+							<li class='fragment' data-fragment-index='2'><b>Cataclysmic Variables:</b>
+							<ul>
+                                    <!--                                    <li>Expected big sample at a <em>know distance</em>.</li>-->
+                                    <li>Potentially very <em>different from field CVs</em></li>
+                                    <li><span class="fragment grow" class='fragment highlight-red' data-fragment-index="5">  A lot of open questions</span></li>
+                                    </ul>
+                            </li>
+							<li class='fragment' data-fragment-index='3'><b>Neutron Stars:</b>
+							<ul>
+                                    <li><em>Known distance</em> binary in GC</li>
+                                    <li>Estimate equation of state (mass-radius relation)</li>
+							</ul>
+							</li>
+                            <li class='fragment' data-fragment-index='4' ><b>Gravitational Waves:</b>.
+							<ul>
+                                <li>White dwarf degenerate sources for <em>LISA</em></li>
+							</ul>
+							</li>
+						</ul>
+
+                    </section>
+                    <section>
+
+<div class="altpanel" style="height: 430px">
+                                 <h2> Field CVs and GC CVs</h2>
+						<div class style="float: left; width: 45%">
+
+                                 <h3>GC CVs</h3>
+                                 <ul>
+                                         <li class='fragment' data-fragment-index='1'  >Primordial and Dynamically formed</li>
+                                         <li class='fragment' data-fragment-index='2'   >Dearth of outbursts </li>
+                                         <li class='fragment' data-fragment-index='3'   >Mainly magnetic? </li>
+                                         <li class='fragment' data-fragment-index='4'  >Period distribution?</li>
+                                         <li class='fragment' data-fragment-index='5'  >8 spectra from 4 GCs</li>
+                                         </ul>
+                        </div>
+						<div class style="float: right; width: 45%">
+                                 <h3>Field CVs</h3>
+                                 <ul>
+                                         <li class='fragment' data-fragment-index='1' >Main Sequence binary evolution</li>
+                                         <li class='fragment' data-fragment-index='2'   > 40% show outburst </li>
+                                         <li class='fragment' data-fragment-index='3'  >25% magnetic </li>
+                                         <li class='fragment' data-fragment-index='4'  > $75 \text{ min} \lesssim \text{P}_{\text{orb}}\lesssim 10 \text{ hrs} $ </li>
+                                         <li class='fragment' data-fragment-index='5'  >Hundreds of spectra</li>
+                                         </ul>
+                        </div>
+
+</div>
+
+<h2 class='fragment' data-fragment-index='6'  > <em>Lack data and understanding CVs in GCs</em></h2>
+<!--                            <div class="override">
+							<div class="conclusion fragment zoom-out" data-fragment-index="4">
+                                    Lack of data and understanding CVs in Globular Clusters
+
+							</div>
+						</div>
+-->
+						<aside class="notes">
+							<div data-markdown>
+							* 159 CVs in  GCs
+                            * 8 % DN if GC CVs
+                            * 1800 CVs total
+                            * 40 % dwarf nova
+                            * Spectra Only 8 in 4 GCs M5, NGC 6624, 47 Tuc
+                            * period Only 16 in 7 GCs
+                            *  
+
+						</aside>
+                            
+<!--                        <h2>Cataclysmic Variables in GC</h2>
+                        <h3>Open Questions</h3>
+                        <ul>
+                                <li><b>Population Properties:</b></li>
+                                    <ul>
+                                            <li>Primordial vs dynamically formed</li>
+                                            <ul>
+                                            <li>Lack of outburst?</li>
+                                            <li>Magnetism?</li>
+                                            <li>Period distribution?</li>
+                                            </ul>
+							</ul>
+							</ul>
+-->
+                    </section>
+
+                    <section>
+						<h2>Binaries in NGC 6397 </h2>
+						<h4>Known X-ray sources </h4>
+					<ul>
+							<li class='fragment' data-fragment-index='1' ><b>Cataclysmic Variables</b>
+							<ul>
+                                                            <li>15 CV <em>Candidates</em></li>
+                                                            <li>Two <em>Bimodal Population:</em></li>
+                                                            <ul><li>Bright and Faint (Cohn et al. 2011)</li></ul>
+							</ul>
+							</li>
+							<li class='fragment' data-fragment-index='2'><b>Millisecond Pulsars (MSPs):</b>
+							<ul>
+                                    <!--                                    <li>Expected big sample at a <em>know distance</em>.</li>-->
+                                    <li>One radio confirmed and one candidate </li>
+                                    </ul>
+                            </li>
+							<li class='fragment' data-fragment-index='3'><b>Neutron Stars:</b>
+							<ul>
+                                    <li> One qLMXB and possibly<em> ultracompact</em> </li>
+							</ul>
+							</li>
+					</ul>
+
+					<p style='margin-top':5cm;>
+					<h2 class='fragment' data-fragment-index='6' style='margin-top':3cm > <em>Characterize and find new binaries   </em></h2></p>
+
+
+
+						<aside class="notes">
+						- Twp with DN outburst.	
+						</aside>
+ 
+
+
+
+                    </section>
+ 
+
+
+
+
+
+
+
+
+
+                    </section> <!-- End Intro -->
+					
+
+				<section data-state="sand" data-chapter="Methods and Observation">
+				
+					<section>
+						<h2>MUSE</h2>
+<div class="altpanel" style="height: 430px">
+                                    <h3>Integral Field Unit (IFU)</h3>
+						<div style="float: left; width: 45%" data-fragment-index='10'>
+							<ul>
+                                    <li><em>Data cube:</em></li>
+                                <table align='center'>
+                                        <tr height='10px'></tr>
+                                        <tr>
+                                                <td><small>$ \text{FoV:}(1^ \prime \times 1 ^ \prime )$</small></td>
+                                        </tr>
+                                        <td><small>$(0.\!\!^{\prime\prime}2 \times 0.\!\!^{\prime\prime}2 \times 1.25 \, \unicode{x212B} $)</small></td></tr>
+
+                                                <tr><td><small>$4800-9300 \, \unicode{x212B}  $</small></td>
+									</tr><tr>
+									</tr></table>
+									<div class='fragment push-in' data-fragment-index='10'>        
+                                    <li>Newer data</li>
+                                <ul>
+                                    <li>June 3 2018</li>
+                                        <li>Longer exposures (250-300 s)</li>
+                                        <li>Total 1.5 h</li>
+				</ul></div>
+
+									<div class='fragment push-out' data-fragment-index='10'>        
+                                    <li>MUSE Commissioning</li>
+                                <ul>
+                                    <li>July 26th to August 3rd, 2014</li>
+                                        <li>Very short exposures (25-60 s)</li>
+                                        <li>Total 95 minutes</li>
+				</ul></div>
+	
+
+
+
+							</ul>
+						</div>
+						<figure style="float: right; width: 55%" class='fragment push-in' data-fragment-index='10'>
+							<img src="images/lmc.svg" />
+                            <caption>
+                                    NGC 6397
+                            </caption>
+						</figure>
+						<figure style="float: right; width: 55%" class='fragment push-out' data-fragment-index='10'>
+							<img src="images/ifs.jpg" />
+                            <caption>
+                                    Credit: ESO's
+                            </caption>
+						</figure>
+
+
+						</div>
+					</section>
+
+
+<!-- FOr pdf
+					<section>
+						<h2>MUSE</h2>
+<div class="altpanel" style="height: 430px">
+                                    <h3>Integral Field Unit (IFU)</h3>
+						<div style="float: left; width: 45%" data-fragment-index='10'>
+							<ul>
+                                    <li><em>Data cube:</em></li>
+                                <table align='center'>
+                                        <tr height='10px'></tr>
+                                        <tr>
+                                                <td><small>$ \text{FoV:}(1^ \prime \times 1 ^ \prime )$</small></td>
+                                        </tr>
+                                        <td><small>$(0.\!\!^{\prime\prime}2 \times 0.\!\!^{\prime\prime}2 \times 1.25 \, \unicode{x212B} $)</small></td></tr>
+
+                                                <tr><td><small>$4800-9300 \, \unicode{x212B}  $</small></td>
+									</tr><tr>
+									</tr></table>
+                                            
+                                    <li>MUSE Commissioning</li>
+                                <ul>
+                                    <li>July 26th to August 3rd, 2014</li>
+                                        <li>Very short exposures (25-60 s)</li>
+                                        <li>Total 95 minutes</li>
+                                </ul>
+							</ul>
+						</div>
+						<figure style="float: right; width: 55%" class='fragment push-in' data-fragment-index='10'>
+							<img src="images/lmc.svg" />
+                            <caption>
+                                    NGC 6397
+                            </caption>
+						</figure>
+						<figure style="float: right; width: 55%" class='fragment push-out' data-fragment-index='10'>
+							<img src="images/lmc.svg" />
+                            <caption>
+                                    NGC 6397
+                            </caption>
+						</figure>
+
+
+						</div>
+                    </section> For pdf-->
+
+
+				
+					<section>
+						<h2>Hubble Space Telescope</h2>
+<div class="altpanel" style="height: 430px">
+                                    <h3>Wide Field Planetary Camera 2</h3>
+						<div style="float: left; width: 45%" data-fragment-index='10'>
+							<ul>
+                                    <li><em>Data cube:</em></li>
+                                <table align='center'>
+                                        <tr height='10px'></tr>
+                                        <tr>
+                                                <td><small>$ \text{FoV:}(1^ \prime \times 1 ^ \prime )$</small></td>
+                                        </tr>
+                                        <td><small>$(0.\!\!^{\prime\prime}2 \times 0.\!\!^{\prime\prime}2 \times 1.25 \, \unicode{x212B} $)</small></td></tr>
+
+                                                <tr><td><small>$4800-9300 \, \unicode{x212B}  $</small></td>
+									</tr><tr>
+									</tr></table>
+									<div class='fragment push-in' data-fragment-index='10'>        
+                                    <li>Newer data</li>
+                                <ul>
+                                    <li>June 3 2018</li>
+                                        <li>Longer exposures (250-300 s)</li>
+                                        <li>Total 1.5 h</li>
+				</ul></div>
+
+									<div class='fragment push-out' data-fragment-index='10'>        
+                                    <li>MUSE Commissioning</li>
+                                <ul>
+                                    <li>July 26th to August 3rd, 2014</li>
+                                        <li>Very short exposures (25-60 s)</li>
+                                        <li>Total 95 minutes</li>
+				</ul></div>
+	
+
+
+
+							</ul>
+						</div>
+						<figure style="float: right; width: 55%" class='fragment push-in' data-fragment-index='10'>
+							<img src="images/lmc.svg" />
+                            <caption>
+                                    NGC 6397
+                            </caption>
+						</figure>
+						<figure style="float: right; width: 55%" class='fragment push-out' data-fragment-index='10'>
+							<img src="images/ifs.jpg" />
+                            <caption>
+                                    Credit: ESO's
+                            </caption>
+						</figure>
+
+
+						</div>
+					</section>
+
+
+
+
+
+
+
+					<section>
+						<h2>The Data</h2>
+
+<table class="hanoi" style="float: center; width: 100%;"><tr>
+							<td>
+								<img src="images/center.svg" width="500px"  />
+							</td>
+							<td>
+								<img src="images/icons/rightarrow_xs.png" />
+							</td>
+							<td>
+                                    <div class='fragment push-out' data-fragment-index='10'>
+								<img src="images/centerrestahalpha.svg" width="500px" />
+                                    </div>
+                                    <div class='fragment push-in' data-fragment-index='10'>
+								<img src="images/centerrestahalphaxray.svg" width="500px" />
+                                    </div>
+							</td>
+						</tr><tr style="font-size: .5em; line-height: 1">
+							<td>
+								White Image
+							</td>
+							<td></td>
+                            <td>
+                                    <p class='fragment push-out' data-fragment-index='10'>
+
+								H$\alpha - $continuum
+                                    </p>
+                            <p class='fragment push-in' data-fragment-index='10'>
+
+								(H$\alpha$ - continuum) + Chandra X-ray Contours
+                                    </p>
+							</td>
+						</tr></table>
+
+
+					</section>
+
+
+<!-- FOr pdf
+					<section>
+						<h2>The Data</h2>
+
+<table class="hanoi" style="float: center; width: 100%;"><tr>
+							<td>
+								<img src="images/center.svg" width="500px"  />
+							</td>
+							<td>
+								<img src="images/icons/rightarrow_xs.png" />
+							</td>
+							<td>
+                                    <div class='fragment push-out' data-fragment-index='10'>
+								<img src="images/centerrestahalphaxray.svg" width="500px" />
+                                    </div>
+                                    <div class='fragment push-in' data-fragment-index='10'>
+								<img src="images/centerrestahalphaxray.svg" width="500px" />
+                                    </div>
+							</td>
+						</tr><tr style="font-size: .5em; line-height: 1">
+							<td>
+								White Image
+							</td>
+							<td></td>
+                            <td>
+                                    <p class='fragment push-out' data-fragment-index='10'>
+
+								(H$\alpha$ - continuum) + Chandra X-ray Contours
+                                    </p>
+                            <p class='fragment push-in' data-fragment-index='10'>
+
+								(H$\alpha$ - continuum) + Chandra X-ray Contours
+                                    </p>
+							</td>
+						</tr></table>
+
+
+                        </section> For pdf-->
+
+                </section>  <!-- End Methods -->
+			
+
+				<section data-state="sky" data-chapter="Results">
+
+
+                <section>
+                            <h2>Detected CVs</h2>
+<div class="altpanel" style="height: 430px">
+						<figure style="float: right; width: 100%">
+							<img src="images/todostodos.svg" />
+							<figcaption>
+								Obtained spectra from CVs in NGC 6397. IDs from (Bogdanov et al., 2010)
+							</figcaption>
+						</figure>
+						</div>
+                </section>
+
+
+
+
+
+
+
+
+               
+                <section>
+                            <h3> Compact Binaries in NGC 6397</h3>
+<div class="altpanel" style="height: 430px">
+						<figure style="float: right; width: 100%">
+							<img src="images/tableupdate.svg" />
+							<figcaption>
+								(1) Grindlay et al. 1995; (2) Edmonds et al. 1999; (3) Kaluzny & Thomson 2003
+							</figcaption>
+						</figure>
+						</div>
+                </section>
+                
+               
+
+                    <section>
+                            <h2>Future Work </h2>
+					<ul>
+							<li><b>Follow up Observations</b>
+							<ul>
+                                    <li>MUSE Adaptive Optics and extended range </li>
+
+							</ul>
+							</li>
+							<li class="fragment"><b>Variability:</b>
+							<ul>
+                                    <li>Lot of Hubble data in Optical and UV </li>
+                            </ul>
+							<li class="fragment"><b>Datacube:</b>
+							<ul>
+                                    <li>Systematically search for emission:</li>
+                                        <ul>
+                                                <li>Helium emitters (AM CVn ?) </li>
+                                                <li> Planetary Nebula </li>
+                                                <li> Active Binaries </li>
+                                        </ul>
+
+
+							</ul>
+						</ul>
+                    </section>
+
+
+
+
+
+
+
+       <!--         
+                    <section>
+						<h2>Results </h2>
+					<ul>
+							<li><b>Primordial CVs</b>
+							<ul>
+                                    <li> 'Faint' undetected CVs H$\alpha$  </li>
+                                    <li> Primordial in the outer regions?  </li>
+							</ul>
+							</li>
+							<li class="fragment"><b>Periods:</b>
+							<ul>
+                                    <li> Too short exposures (100 secs first night)</li>
+                                    <li> Secondary Mass - Period relation: </li>
+                                    <ul>
+                                    <li> Big error bars mass ratio determination </li>
+                                    <li> No TiO and turnoff point: $0.5 \text{ M}_\odot \lesssim \text{M}_{\text{sec}} \lesssim 0.8 \text{ M}_\odot$ </li>
+                                    </ul>
+                            </ul>
+                            <li class="fragment"><b>Outbursts:</b>.
+							<ul>
+                                    <li>Expected at least one (biased and empirical estimate)</li>
+                                    <li> Very rare in globular clusters. Suggests magnetic in nature </li>
+							</ul>
+							</li>
+                            
+                            
+                            <li class="fragment"><b>Magnetism:</b>
+							<ul>
+                                    <li> No ionised helium (He II) </li>
+                                    <li> Strongest He II outside range (4686 &#8491;) </li>
+							</ul>
+							</li>
+						</ul>
+                    </section> -->
+                
+
+
+                </section> <!-- End Concluions -->
+
+
+				<section data-state="sand" data-chapter="Conclusions">
+                   <section>
+							<h2>Conclusion</h2>
+<div class="block">
+        An IFU like <em>MUSE</em> can be used to efficiently study the population of compact objects in globular clusters. <em>Deeper observation</em> are needed but a single exposure allowed us to recover the optical spectra of various known X-ray sources. 
+						</div>
+                    </section>
+                </section> <!-- End COnclusion -->
+                
+
+
+<section data-state="sand">
+						<h2 style="margin-top: 100px; margin-top: 75px">Gracias</h2>
+						<table class="hanoi"><tr>
+							<td><img src="images/logos/ttu.svg" width="150px" /></td>
+							<td><p>Department of Physics and Astronomy</p></td>
+						</tr><tr>
+						</tr></table>
+						<div style="text-align: right; width: 100%" class="fragment">
+							<ul style="text-align: right; list-style-position: inside; font-size: .5em; line-height: 1.2; width: 100%">
+								<li><a href="?print-pdf">Printable version</li>
+								<li><a href="http://manuelpm.me/AstroMeetingApril19">Available online</li>
+							</ul>
+						</div>
+</section>
+
+
+
+
+
+			<!--end-->
+
+</div>
+
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/defense.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+ math: {
+        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    },
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+
+                    { src: 'plugin/math/math.js', async: true },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<script type="text/javascript" src="js/phd.js"></script>
+
+	</body>
+</html>
